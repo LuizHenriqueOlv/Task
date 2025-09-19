@@ -6,6 +6,7 @@
         <item name="android:windowBackground">@color/color_default</item>
         <item name="colorPrimaryVariant">@color/color_default</item>
         <item name="colorPrimary">@color/color_default</item>
+        <item name="colorOnPrimary">@color/black</item>
     </style>
 
     <style name="Theme.Task" parent="Base.Theme.Task" />
