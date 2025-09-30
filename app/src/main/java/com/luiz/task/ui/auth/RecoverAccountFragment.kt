@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import com.luiz.task.R
 import com.luiz.task.databinding.FragmentRecoverAccountBinding
 import com.luiz.task.databinding.FragmentSplashBinding
+import com.luiz.task.util.initToolbar
 
 
 class RecoverAccountFragment : Fragment() {
@@ -23,6 +24,10 @@ class RecoverAccountFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initToolbar(binding.toolbar)
+    }
     override fun onDestroyView() {
         super.onDestroyView()
         _binding=null
